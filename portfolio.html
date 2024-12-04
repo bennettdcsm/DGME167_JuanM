@@ -1,0 +1,565 @@
+    <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sebastian Portfolio</title>
+
+<style> 
+	body {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		background-color: #DDC9AA;
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+	}
+	
+	.container {
+		width: 1024px;
+		margin-top: 20px;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	
+	.see-my-work-button {
+	background-color: white;
+	border-color: #641712;
+	border-style: solid;
+	border-width: 2px;
+	color: #641712;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 18px;
+	cursor: pointer;
+	margin-top:60px;
+	margin-right: 10px;	
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	transition: background-color 1s, color 1s;
+	font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+		font-weight: bold; 
+		font-size: 12px;
+}
+	.see-my-work-button:hover {
+	background-color: #641712;
+	color: white;
+}
+	.see-my-work-button:active {
+	opacity: 0.5;
+	} 
+	
+	
+	.hire-me-button {
+	background-color: #641712;
+	border: none;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 18px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px; 
+	transition: box-shadow 0.15s;
+	font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+		font-weight: bold; 
+		font-size: 12px;
+		
+	}
+	.hire-me-button:hover {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+		
+	}
+	
+	.hire-me-button:active {
+	background-color: #400E0B;
+	}
+	.see-more-button {
+	background-color: #641712;
+	border: none;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 18px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	transition: box-shadow 0.15s;
+	font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+		font-weight: bold; 
+		font-size: 12px;
+	}
+	
+	.see-more-button:hover {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+	}
+	
+	.see-more-button:active {
+	background-color: #400E0B;
+	}
+	
+	.send-button {
+		padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 18px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+		color: #1E1E1B; 
+		background-color: #FFF5F1;
+		border: none;
+		width: auto;
+		max-width: 100px;
+		transition: box-shadow 0.15s;
+	}
+	
+	
+	.send-button:hover {
+	background-color: #641712;
+	color: white;
+}
+	
+	.send-button:active {
+	background-color: #400E0B;
+	}
+	
+	p {
+	font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+	margin-top: 0px;
+	margin-bottom: 0px;
+		
+	}
+	
+	h1 {
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+		font-size: 40px;
+	}
+	
+	
+	h2 {
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";>
+	}
+	
+	h4 {
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+	}
+	
+	.basic-paragraph {
+		font-weight: regular; 
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 20px;
+		
+	}
+	
+	.navigation-menu {
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+		font-weight: bold; 
+		font-size: 18px;
+		list-style: none;
+		padding: 0px; 
+		margin: 0px;
+		display: flex;
+		justify-content: flex-end;
+	
+	}
+	
+	.navigation-menu li {
+		margin-left: 20px;
+		text-align: right;
+	}
+	
+	.navigation-menu a {
+		 color: #1E1E1B;
+        text-decoration: underline; 
+		
+	}
+	
+	.navigation-menu a:hover {
+        color: #400E0B;  
+		
+	}
+	
+	.content-menu {
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+		font-weight: bold; 
+		font-size: 18px;
+	}
+	
+	.span-red-higlight {
+		color: #641712;
+		font-weight: bold;	
+	}
+	
+	.print-illustrations {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
+	}
+	
+	
+	.typographic-illustrations {
+		width: 100%;
+	}
+	
+	.scientific-illustration {
+		width: 100%;
+	}
+	
+	.editorial-design {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
+	}
+
+	
+	.magazine-layouts {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	.magazine-one {
+		width: 100%;
+	}
+	
+	.magazine-two {
+		width: 100%;
+	}
+	
+	
+	.web-app-design {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
+	}
+	
+	.app-one {
+		width: 100%;
+
+	}
+	
+	.app-two {
+		width: 100%;
+	}
+	
+	
+	.production-design {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
+	}
+	
+	
+	.brochure-one {
+		width: 100%;
+	}
+	
+	.brochure-two {
+		width: 100%;
+	}
+	
+	.hero-section-grid {
+		display: grid;
+		grid-template-columns: 500px 1fr;
+		column-gap: 10px;
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+	
+	
+	.body-copy {
+		vertical-align: top; 
+	}
+	
+	.header-text {
+	margin-top: 0px;
+	}
+	
+	
+	.portrait {
+
+	display: flex;
+	justify-content: flex-end;
+	max-width: 500px;
+		width: 100%;
+		overflow: hidden;
+		
+	}
+	
+	.portrait img {
+		width: 100%;
+		max-width: 300px;
+		height: auto;
+		object-fit: contain;
+		
+	}
+	
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 30px;
+	}
+	
+	.left-section {
+		width: 240px;
+	}
+
+</style>
+</head>
+<body>
+	
+	<div class="container">
+	
+<header class="header">
+	<div class="left-section">
+	<a href="index.html">
+	 <img src="images/logo.svg" alt="Logo" width="231px;" height="auto;">
+		</a>
+		</div>
+	
+	<nav>
+			<ul class="navigation-menu">
+	<li><a href="index.html"> Home </a></li>
+	<li><a href="about.html">About </a></li>
+	<li><a href="portfolio.html">Portfolio</a></li>
+	<li><a href="blog.html">Blog</a></li>
+    <li><a href="connect.html">Connect</a></li>				
+	</ul>	
+	</nav>
+</header>
+
+
+	
+		
+	<h2>
+		<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #FFF5F1; color: #1E1E1B; height: 200px; padding: 20px; margin-bottom: 0px"> Content
+	<div style="display: flex; column-gap: 50px; text-align: left;">
+	<ol class="content-menu" style="margin: 0; padding: 0; list-style-position: inside; margin-top: 20px;line-height: 30px">
+								
+	<li>Editorial Design</li>
+	<li>Web/App Design</li>
+
+	</ol> 
+		
+	<ol class="content-menu" start="3" style="margin: 0; padding: 0; list-style-position: inside;margin-top: 20px; line-height: 30px">						
+	<li>Production Design</li> 
+	<li>Print &amp; Illustrations</li>
+	</ol>
+	</div>
+	</div>
+	</h2>
+	<section>
+	<h2>
+		
+		<div style="display: flex;
+		align-items: center; justify-content: center; background-color: #641712; color: #FFF5F1; height: 100px; padding: 20px; margin-top: 0;">
+		Editorial Design 
+		
+		</div>
+		
+	</h2>
+		
+		<div class="editorial-design">
+		<div class="magazine-one">
+	<img src="images/magazine-one.jpg" alt="Magazine Front Cover">
+		</div>
+		
+
+	
+		<div class="magazine-two">
+	<img src="images/magazine-two.png" alt="Magazine Spread">
+		
+		</div>
+		
+		</div>
+		
+	<h4>
+		Communications Arts Magazine Layout
+	</h4>
+	<a href="editorial-design.html">
+	<button class="see-more-button">
+		See More
+	</button>
+		</a>
+	</section>
+		
+	<br><br><br>
+	<section>
+		
+		<div class="editorial-design">
+		<div class="magazine-one">
+	<img src="images/book-1.png" alt="Magazine Front Cover">
+		</div>
+		
+
+	
+		<div class="magazine-two">
+	<img src="images/book-2.png" alt="Magazine Spread">
+		
+		</div>
+		
+		</div>
+		
+	<h4>
+		Serif GPT Typography Book Layout
+	</h4>
+		
+	<a href="book-design.html">	
+	<button class="see-more-button">
+		See More
+	</button>
+		</a>
+	</section>
+	
+	<section>
+	<h2>
+		<div style="display: flex;
+		align-items: center; justify-content: center; background-color: #BC827A; color: #FFF5F1; height: 100px; padding: 20px; margin-top: 60px;">
+			Web/App Design </div>
+	</h2>
+	
+	<div class="web-app-design">
+		
+		
+	<div class="app-one">
+	<img src="images/web-one.jpg" alt="Senior for Senior Website">
+		</div>
+	
+		
+		<div class="app-two">
+	<img src="images/web-two.jpg" alt="Senior For Senior App">
+		</div>
+		</div>
+	<h4>
+		Senior for Senior Website and Mobile App
+	</h4>
+	</section>
+	<a href="web-design.html">
+	<button class="see-more-button">
+		See More
+	</button>
+		</a>
+	<section>
+		
+	<h2>
+		
+		<div style="display: flex;
+		align-items: center; justify-content: center; background-color: #1E1E1B; color: #FFF5F1; height: 100px; padding: 20px; margin-top: 60px;">
+			Production Design </div>
+	</h2>
+	
+		<div class="production-design">
+		<div class="brochure-one">
+	<img src="images/trifold-brochures-2.png" alt="Brochure">
+		</div>
+		
+		<div class="brochure-two">
+	<img src="images/trifold-brochures.png" alt="Brochure Outside Cover">
+		</div>
+		
+		</div>
+	<h4>
+	College of San Mateo's Wellness Center Brochure
+	</h4>
+		
+	<a href="production-design.html">	
+	<button class="see-more-button">
+		See More
+	</button>	
+		</a>
+	</section>
+	<br><br><br><br>
+	
+	<section>
+	<div class="production-design">
+		<div class="brochure-one">
+	<img src="images/cd-design-1.png" alt="CD Cover">
+		</div>
+		
+		<div class="brochure-two">
+	<img src="images/vinyl-design.png" alt="Vinyl Cover">
+		</div>
+		
+		</div>
+	<h4>
+	CD and Vinyl Cover for Amara Bleu
+	</h4>
+		
+	<a href="cd-design.html">
+	<button class="see-more-button">
+		See More
+	</button>
+		</a>	
+	</section>
+		
+	<section>
+	<h2>
+		<div style="display: flex;
+		align-items: center; justify-content: center; background-color: #641712; color: #FFF5F1; height: 100px; padding: 20px; margin-top: 60px;">
+		Print &amp; Illustrations
+		</div>
+	</h2>
+	<div class="print-illustrations">
+		<div class="typographic-illustrations">
+	<img src="images/mad-hatter.jpg" alt="Typografic Illustration" >
+		
+		
+	<h4>
+		Typographic Illustrations
+	</h4>
+		<a href="typographic-illustration.html">
+	<button class="see-more-button">
+		See More
+	</button>
+			</a>
+		</div>
+	
+	
+	<div class="scientific-illustration">
+	<img src="images/blue-bird.jpg" alt="Scientific Illustration" >
+		
+	<h4>
+		Scientific Illustrations
+	</h4>
+	
+		
+		<a href="scientific-illustration.html">
+	<button class="see-more-button">
+		See More
+	</button>
+			</a>
+	</div>
+		
+		
+		</div>
+		
+	</section>	
+
+	<br>
+	<br>
+	<br>
+	<footer>
+	<hr>
+	<p div style="display: flex;
+		align-items: center; justify-content: center;"> <small>
+		Copyright &copy;2024 Sebastian Mendoza. All Rights Reserved
+	</small></p>
+	</footer>
+	
+		</div>
+</body>
+</html>
