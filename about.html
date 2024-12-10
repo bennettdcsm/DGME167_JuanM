@@ -1,0 +1,352 @@
+    <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sebastian Portfolio</title>
+
+<style> 
+	body {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		background-color: #DDC9AA;
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+	}
+	
+	.container {
+		width: 1024px;
+		margin-top: 20px;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	a .see-my-work-button, a.see-my-work-button {
+    text-decoration: none !important;
+    display: inline-block;
+}
+.see-my-work-button {
+    text-decoration: none !important;
+	display: block;
+    margin: 20px auto;
+	margin-left: 420px;
+	margin-top: 60px;
+    background-color: white;
+    border-color: #641712;
+    border-style: solid;
+    border-width: 2px;
+    color: #641712;
+    padding: 10px 20px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    transition: background-color 1s, color 1s;
+    font-family: Helvetica, Arial, sans-serif;
+	
+	}
+	.see-my-work-button:hover {
+	background-color: #641712;
+	color: white;
+}
+	.see-my-work-button:active {
+	opacity: 0.5;
+	} 
+	
+	
+	
+	p {
+	font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+	margin-top: 0px;
+	margin-bottom: 0px;
+		
+	}
+	
+	h1 {
+		font-family:"Georgia Bold", "serif"
+		font-size: 40px;
+	}
+	
+	
+	h2 {
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";>
+	}
+	
+	h3 {
+		margin-top: 5px;
+	}
+	
+	
+	
+	
+	h4 {
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+	}
+	
+	.basic-paragraph {
+		font-weight: regular; 
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 20px;
+		
+	}
+	
+	.navigation-menu {
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+		font-weight: bold; 
+		font-size: 18px;
+		list-style: none;
+		padding: 0px; 
+		margin: 0px;
+		display: flex;
+		justify-content: flex-end;
+	
+	}
+	
+	.navigation-menu li {
+		margin-left: 20px;
+		text-align: right;
+	}
+	
+	.navigation-menu a {
+		 color: #1E1E1B;
+        text-decoration: none; 
+		
+	}
+	
+	.navigation-menu a:hover {
+        color: #400E0B;  
+		
+	}
+		.navigation-menu a.active {
+    font-weight: bold;
+		color: #400E0B;
+		text-decoration: underline;
+	}
+	.span-red-higlight {
+		color: #641712;
+		font-weight: bold;	
+	}
+	
+	
+	.hero-section-grid {
+		display: grid;
+		align-items: flex-start;
+		grid-template-columns: 600px 1fr;
+		column-gap: 10px;
+		max-width: 1024px;
+		margin: 0 auto;
+		margin-top: 0px;
+	}
+	
+	.stats-section {
+		display: grid;
+		align-items: flex-start;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 10px;
+		margin-bottom: 20px;
+	}
+	
+	.body-copy {
+		grid-column: 1; 
+	}
+	
+	.header-text {
+	margin-top: 0px;
+	}
+	
+	
+	.portrait {
+
+	grid-column: span 1;
+	display: flex;
+	justify-content: flex-end;
+	max-width: 500px;
+		width: 100%;
+		overflow: hidden;
+		padding-top: 0px;
+		
+	}
+	
+	.portrait img {
+		width: 100%;
+		max-width: 300px;
+		height: auto;
+		object-fit: contain;
+		padding-top: 0px;
+		margin-top: 0px;
+		
+	}
+	
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 30px;
+		margin-top: 0px;
+	}
+	
+	.left-section {
+		width: 240px;
+	}
+	.long-paragraph {
+		grid-column: span 2;
+		margin-top: 20px; 	
+	}
+}
+
+.education-section, .experience-section {
+    padding: 10px;
+	
+	}
+	
+	
+	
+.paragraph-big {
+  line-height: 1.5;
+	}
+	
+	footer a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+	
+	
+	
+</style>
+</head>
+<body>
+	
+	<div class="container">
+	
+<header class="header">
+	<div class="left-section">
+	<a href="index.html">
+	 <img src="images/logo.png" alt="Logo" width="231px;" height="auto;">
+		</a>
+		</div>
+	
+	<nav>
+			<ul class="navigation-menu">
+	<li><a href="index.html"> Home </a></li>
+	<li><a href="about.html"  class="active">About </a></li>
+	<li><a href="portfolio.html">Portfolio</a></li>
+	<li><a href="blog.html">Blog</a></li>
+    <li><a href="connect.html">Connect</a></li>				
+	</ul>	
+	</nav>
+</header>
+
+
+	<div class="hero-section-grid">
+	<div class="body-copy">
+		
+	<h1 class="header-text">
+		Pixels, passion, and <br> a dash of Colombian 
+		<br>
+		coffee
+	</h1>
+		
+	<p class="basic-paragraph">
+		
+		<p>My name is Sebastian and I’m a Web &amp; Digital Designer based in <b>San Francisco.</b></p>
+	
+		<br>
+		<p>In every design I create, I rely on the <span class="span-red-higlight"> 3 Ws: the Who, the What, and the Why.</span> I believe every project tells a story, and I am here to be the interpreter of yours. I balance storytelling and visuals to create something unforgettable. </p>
+		<br>
+		<p>To me, design isn’t just about making things look good; it’s about creating lasting experiences. I love storytelling, so I know the most effective way to convey an idea is with purpose and clarity. Just like music, every visual composition needs rhythm, accents, and hooks, and that’s why I am eager to create a <b>full experience with every piece.</b></p>
+		<br>
+		<p> I was born and raised in Colombia, so Spanish is my first language. <span class="span-red-higlight"> I offer my services in both English and Spanish.</span>  I am an audio producer and musician by diploma, but visual designer by heart - and diploma as well- </p>
+		</p>
+		<p class="long-paragraph"> Whether you need a website,  a visual piece for your business, branding, or something else, I am here to help, and I am the dreamer you need to bring your vision to life.</p>
+		
+	</div>
+	
+		
+	<div class="portrait">
+	<img src="images/sebastian.jpg" alt="Sebastian Portrait" width="288" height="432">
+		</div>
+
+		</div>
+		
+	<br><br>
+	
+	
+	
+	
+<div class="stats-section">
+	
+<div class="expererience-section">
+		
+<h2 class="span-red-higlight">Experience</h2>		
+	
+
+	
+<ul>
+	<li><h3>Digital Designer</h3>
+<p class="paragraph-big"><b>Menlo Studio</b></p>
+<p class="paragraph-big"><em>Nov 2024 - Present</em></p>
+		</li>
+<br><br>
+	
+<li><h3>Freelance Digital Designer</h3>
+<p class="paragraph-big"><b>Graphic, Web, and UX Design</b></p>	
+<p class="paragraph-big"><em>July 2024 - Present</em></p>
+	</li>
+	</ul>
+	</div>
+	
+		
+<div class="education-section">
+		
+<h2 class="span-red-higlight">Education</h2>	
+	
+	<ul>	
+<li><h3>Associate Degree in Digital Media: Graphic Design</h3>
+<p><em>College of San Mateo</em></p>
+	</li>
+<br><br>
+		
+<li><h3>Associate Degree in Digital Media: Web and Mobile Design</h3>
+<p><em>College of San Mateo</em></p>
+	</li>
+
+<br><br>
+		
+<li><h3>Certificate of Specialization in Digital Media: Broadcast and Electronic Media</h3>
+<p><em>College of San Mateo</em></p>
+	</li>
+	</ul>
+	</div>
+		
+		</div>
+		<br>
+		
+		<a href="portfolio.html">
+    <button class="see-my-work-button">See My Work</button>
+</a>
+
+	
+	<footer>
+    <hr>
+		<br>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <div>
+            <a href="https://www.instagram.com/juansebastianboo" target="_blank" style="margin-right: 15px;">
+                <img src="images/instagram-icon.png" alt="Instagram" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://www.linkedin.com/in/j-sebastian-mendoza-64a09624b" target="_blank">
+                <img src="images/linkedin-icon.png" alt="LinkedIn" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+        <p style="margin-top: 10px;">
+            <small>Copyright &copy; 2024 Sebastian Mendoza. All Rights Reserved</small>
+        </p>
+    </div>
+</footer>
+	
+	</div>
+</body>
+</html>
