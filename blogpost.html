@@ -1,0 +1,421 @@
+    <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sebastian Portfolio</title>
+
+<style> 
+	body {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		background-color: #D6C7B0;
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+	}
+	
+	.container {
+		width: 1024px;
+		margin-top: 20px;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	
+	.see-my-work-button {
+	background-color: white;
+	border-color: #641712;
+	border-style: solid;
+	border-width: 2px;
+	color: #641712;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 18px;
+	cursor: pointer;
+	margin-top:60px;
+	margin-right: 10px;	
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	transition: background-color 1s, color 1s;
+	font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+		font-weight: bold; 
+		font-size: 12px;
+}
+	.see-my-work-button:hover {
+	background-color: #641712;
+	color: white;
+}
+	.see-my-work-button:active {
+	opacity: 0.5;
+	} 
+	
+	
+	.hire-me-button {
+	background-color: #641712;
+	border: none;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 18px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px; 
+	transition: box-shadow 0.15s;
+	font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+		font-weight: bold; 
+		font-size: 12px;
+		
+		
+		
+	}
+	.hire-me-button:hover {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+		
+	}
+	
+	.hire-me-button:active {
+	background-color: #400E0B;
+	}
+	.see-more-button {
+	background-color: #641712;
+	border: none;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 18px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	transition: box-shadow 0.15s;
+	font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+		font-weight: bold; 
+		font-size: 12px;
+	}
+	
+	.see-more-button:hover {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+		background-color: #A43A33;
+		transition: background-color 0.50s, color 1s;
+	}
+	
+	.see-more-button:active {
+	background-color: #400E0B;
+	}
+	
+	.send-button {
+		padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 18px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+		color: #1E1E1B; 
+		background-color: #FFF5F1;
+		border: none;
+		width: auto;
+		max-width: 100px;
+		transition: box-shadow 0.15s;
+	}
+	
+	
+	.send-button:hover {
+	background-color: #641712;
+	color: white;
+}
+	
+	.send-button:active {
+	background-color: #400E0B;
+	}
+	
+	p {
+	font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+	margin-top: 0px;
+	margin-bottom: 0px;
+		
+	}
+	
+	h1 {
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+		font-size: 40px;
+	}
+	
+	
+	h2 {
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";>
+	}
+	
+	h4 {
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+	}
+	
+	.basic-paragraph {
+		font-weight: regular; 
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 20px;
+		
+	}
+	
+	.navigation-menu {
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+		font-weight: bold; 
+		font-size: 18px;
+		list-style: none;
+		padding: 0px; 
+		margin: 0px;
+		display: flex;
+		justify-content: flex-end;
+	
+	}
+	
+		.navigation-menu li {
+		margin-left: 20px;
+		text-align: right;
+	}
+	
+	.navigation-menu a {
+		 color: #1E1E1B;
+        text-decoration: none; 
+		
+	}
+	
+	.navigation-menu a:hover {
+        color: #400E0B;  
+		
+	}
+	
+	.content-menu {
+		font-family:Helvetica, "Helvetica Bold", "Helvetica Light Oblique", Arial, "Arial Bold", "Arial Italic", "sans-serif";
+		font-weight: bold; 
+		font-size: 18px;
+	}
+	
+	.span-red-higlight {
+		color: #641712;
+		font-weight: bold;	
+	}
+	
+	.print-illustrations {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
+	}
+	
+	
+	.typographic-illustrations {
+		width: 100%;
+	}
+	
+	.scientific-illustration {
+		width: 100%;
+	}
+	
+	.editorial-design {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
+	}
+
+	
+	.magazine-layouts {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	.magazine-one {
+		width: 100%;
+	}
+	
+	.magazine-two {
+		width: 100%;
+	}
+	
+	
+	.web-app-design {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
+	}
+	
+	.app-one {
+		width: 100%;
+
+	}
+	
+	.app-two {
+		width: 100%;
+	}
+	
+	
+	.production-design {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
+	}
+	
+	
+	.brochure-one {
+		width: 100%;
+	}
+	
+	.brochure-two {
+		width: 100%;
+	}
+	
+	.hero-section-grid {
+		display: grid;
+		grid-template-columns: 500px 1fr;
+		column-gap: 10px;
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+	
+	
+	.body-copy {
+		vertical-align: top; 
+	}
+	
+	.header-text {
+	margin-top: 0px;
+	}
+	
+	
+	.portrait {
+
+	display: flex;
+	justify-content: flex-end;
+	max-width: 500px;
+		width: 100%;
+		overflow: hidden;
+		
+	}
+	
+	.portrait img {
+		width: 100%;
+		max-width: 300px;
+		height: auto;
+		object-fit: contain;
+		
+	}
+	
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 30px;
+	}
+	
+	.left-section {
+		width: 240px;
+	}
+	
+	.larry {
+		 text-align: center;
+	}
+
+			footer a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+	
+	
+</style>
+</head>
+<body>
+	
+	<div class="container">
+	
+<header class="header">
+	<div class="left-section">
+	<a href="index.html">
+	 <img src="images/logo.png" alt="Logo" width="231px;" height="auto;">
+		</a>
+		</div>
+	
+	<nav>
+			<ul class="navigation-menu">
+				<li><a href="index.html"> Home </a></li>
+	<li><a href="about.html">About </a></li>
+	<li><a href="portfolio.html">Portfolio</a></li>
+	<li><a href="blog.html">Blog</a></li>
+    <li><a href="connect.html">Connect</a></li>		
+	</ul>	
+	</nav>
+</header>
+
+		
+	<h2>
+		<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; color: #1E1E1B; height: 50px; padding: 20px; margin-bottom: 0px"> Real Heroes Do Not Wear Capes: The Brave Story of Larry Kramer
+		</div>
+	
+	</h2>
+	<div style="line-height: 25px;">
+	<p> According to the World Health Organization, known as WHO, around 113 million people have been infected with the HIV/AIDS and 51.3 million have died since the beginning of the epidemic in 1981. In fact, the virus was unidentified at the beginning of the 80s, so the general public called it the “gay cancer.” The stigma, hate, and bullying against gay people only grew greater throughout the years. The number of deaths would have been higher if it were not for one man, whose bravery led an entire movement that changed policies and advocated for human rights. That man was Larry Kramer, an American author and screen writer, already famous in the movie industry for his highly acclaimed scripts, like Women in Love, which led him to be nominated to the most prestigious award in cinema, the Oscars. However, his world changed when a rare disease hit the streets of San Francisco and New York, affecting mostly young gay men. Kramer, being openly gay, decided to pause his successful career to be the voice of many men who were dying without any help. In fact, Larry Kramer fought for the LGBT community to take action against the HIV/AIDS pandemic by raising his voice against America’s lack of action and the indifference of the entire world.</p>
+
+		<br>
+<p>Larry Kramer raised his voice against the government’s lack of action and gave hundreds of gay men infected with the HIV/AIDS disease the strength to fight for their lives. Back in the 80s, the stigma about the plague was so strong that a lot of gay people decided to die in silence and loneliness instead of fighting, but Kramer was not one of them. Gavi, an organization that vaccinates children against deadly and infectious diseases, says that HIV/AIDS is one of the seven deadliest plagues in the history of the human civilization, taking the spot number five, and being followed by COVID-19 (Prahbu). Back in 1982, the government’s indifference against HIV/AIDS was so notorious that Kramer, with five other gay men, founded the Gay Men’s Health Crisis, known as GMHC, the oldest AIDS organization in America. They were so scared about the disease that they organized a meeting in Kramer’s apartment, located in New York City, to talk about what they could do to raise money to investigate this rare disease since the government was not doing anything to help. In fact, their silence was making the general public scared, so they were attacking gay people, making hurtful jokes and hateful comments towards them since the popular belief was that the illness only affected gay men. 
+	
+<br><br>
+	The same night Kramer and the GMHC members got together, they raised $6,500 to use it exclusively to do research. Over the next year they ended up raising $50,000 more and seeing the success of the fundraisers they decided to create a hotline to help people with questions and services. According to the GMHC records in The New York Public Library, the hotline was a success. Over 100 calls were received on the first night, but some people needed a more specific and professional help. Since they did not have any help from the government, the GMCH organization created the Patient Services Division to provide a more advanced help (GMHC). They were alone fighting with this invisible disease. GMCH decided to take action against the epidemic in order to save lives and help educate the people. In fact, over the next years they raised more than $100,000. They educated doctors to treat terminally ill people; they created group support and individual therapy for infected people. They created a complete bibliography with symptoms and a list of doctors capable of treating patients, and they did everything by themselves. The head of everything, Kramer, was a fighter. He was so strong and stubborn that he decided to call out everyone for their lack of action in a very powerful statement, especially the U.S. president at the time, George Bush. Kramer took the stage in a 1991 convention, ten years after the first case of the plague in the U.S, with so much rage and fear because of the governments lack of action. He said, “we have a president who cares more about the unemployed and pits people against each other… than he cares about us” (NowThis Impact, 1:50-2:01). Kramer was yelling the whole time because he knew that was the only way to be heard. Already ten years had passed, and the hate against gay people was bigger than ever. The silence of the government contributed to the excessive discrimination against gay men, and their indifference let them die completely alone. In fact, GMHC founded a division to help reunite families of the terminally ill patients, so they could be together with their loved ones at the hospital one last time. Kramer not only raised his voice against the government’s lack of action, but he acted against it, and because of that millions of gay men had the information and tools to improve their last years, and the strength to fight for their lives.</p>
+<br>
+<p>Larry Kramer called out the pharmaceutical companies for their indifference against the HIV/AIDS epidemic, so gay men could have access to medicine and health support. Not only the government decided to pretend the epidemic was not happening, but also the vast majority of doctors, scientists and drug companies. Their lack of empathy, support, and efficacy was so notorious that Larry Kramer co-founded a second organization called AIDS coalition to Unleash Power, known as ACT UP, in 1987. The organization decided to work through direct action, with nonviolent civil protests as their way to get the attention the victims desperately were looking for. They needed to get the media coverage, so the message could be shown everywhere to anyone. According to the ACT UP records in The New York Public Library, one month after its founding, the organization planned a protest on Wall Street to speak up against pharmaceutical companies. The outcome was so powerful than even though seventeen people were unfairly arrested, the Food and Drug administration, known as the FDA, announced they were going to cut the approval time, and the price too, for medicines by two years (New York Public Library). Clearly, Kramer and the organization realized that nonviolent protests were so powerful and a great way to catch the world’s attention, so they organized more and more throughout the years. ACT UP received hundreds of volunteers, and they were able to change some public policies that affected HIV/AIDS patients all around the world, not only in America.
+	
+	
+<br><br>
+Having the media coverage showing their fight against the virus and pressuring the pharmaceutical companies to release accessible drugs, Kramer and ACT UP were able to pressure the FDA to invest in drugs and quicker treatments, and to make them accessible to most of the population. The organization took advantage of every situation where cameras and journalist were present to go and protest with shirts, signs and banners exposing the pharmaceutical companies and boycotting every major event, so the broadcast would turn into an AIDS informative section. Even though the ACT UP movement was so big, and the pharmaceutical companies responded, a lot of gay men died due to the advance of the illness. In 1991, Kramer said, “Forty million infected people is a plague, and nobody acts as if it is. Nobody here either. Nobody in this Hospital. Nobody in this city. Nobody in this world” (NowThis Impact, 0:17-0:38). Clearly, the activist had so much anger and rage inside that he took the stage to call out the pharmaceutical companies for their slow response and all the deaths their indifference and negligence caused. At this point a lot of Kramer’s personal friends and acquaintances were getting infected, so his fight was getting more personal every day. In order to understand Kramer’s attitude, it is crucial to compare the quick response COVID-19 epidemic got versus the tragic response HIV/AIDS got. The entire world decided to act and shut down airports, lockdown cities, make remote jobs for a lot of people, and give a lot of money to pharmaceutical companies to release a vaccine. On the other hand, the response HIV/AIDS pandemic got was pretty slow. No one really cared for the people infected. The rumor said that only gay people were being attacked by the virus, so no one outside the gay community really put any effort at all. No one cared for minorities. Larry Kramer decided to fight for gay and human rights since no other help was given.  The ACT UP organization, co-founded by Larry Kramer, pressured the pharmaceutical companies and made them work towards a solution to the HIV/AIDS epidemic. Because of Kramer and his fight, gay men had access to more affordable medicine and health support. A greater human rights change was made.</p>
+<br>
+		
+<p>Even though Kramer was often perceived as problematic, and especially when he called out the gay community for being irresponsible and promiscuous, his fight against the HIV/AIDS epidemic led to successfully start a stronger movement that saved millions of lives.  After Kramer co-founded both GMHC and ACT UP some people saw him as an out of touch person because of his honest, intimidating and straight forward way to say things. In fact, he decided to part ways with both organizations because some of the members’ decision to not preach about safe sex, monogamy, and abstinence in order to get rid of the epidemic, or at least give some time to pharmaceutical companies to find a cure. In an interview in 1982, where he recalled all the things GMHC had done to help the gay community,  he explained his main idea of practicing a more conscious sex: “until we know better cool it, give up your drugs, and lay off the number of people you are having sex with until we know better because if it is a virus, and it is sexually transmitted; it is passing between us…” (Such Is Life Videos, 4:31-4:47).
+	
+<br><br>
+It was almost impossible to ask the gay community to stay away from promiscuity, so some statements like that were perceived as a joke, and most men decided to ignore them and call Kramer a liar and a crazy person, even some of the cofounders of ACT UP and GMHC. By that time, a trend of a free-sex movement started in the 70s. Bob Roehr, a biomedical journalist who wrote Larry Kramer’s bibliography said, “The 1970s were a golden age of promiscuity for gay men, particularly for baby boomers coming of age after the Stonewall rebellion began to break the hold of the closet. Discos and bath houses proliferated, and Fire Island became a summer bacchanal” (Roehr, pg. 2). The only two options gay men had back in time were either being in the closet or persecuted by the world, so it was not easy for them. Even though I can see why many gay men decided not to follow Kramer’s advice, their way to live their sexual life lacked self-care, responsibility and more important, respect. In reality, Kramer’s attitude, and the way he expressed and defended the community are some of the reasons the entire world paid attention to the epidemic. He was loud and very stubborn, but that was the only way to help the victims and advocate for them on a time when gay rights were non-existent. In fact, millions of lives were saved by his strength and courage including American politician and gay activist Peter Staley who remembers how the movement Larry Kramer started back in the 80s saved his life when he was diagnosed with HIV/AIDS. Staley also states that Kramer’s flaws were nonexistent next to the fights he won for everybody (Roehr, pg. 3). Clearly, Kramer not only influenced hundreds of people, but he also fought for them. He even fought against some gay men in order to prioritize and save millions of lives. Whatever tactics he used, or the reputation he got do not matter next to the policies he changed, the help he established, and the fight he led. </p>
+<br>
+		
+<p>Larry Kramer not only fought for the LGBT community, but also did for himself. While he was yelling, advocating and demanding rights for his people, the silence disease was growing on his own body without his knowledge. In 1988 he was diagnosed with HIV/AIDS. Instead of isolating himself and accept his luck, he decided to fight for his right to live, and he did. Because of the awareness Kramer started in 1982, he had the access of effective medicine, more treatments, and the government’s help. In fact, Kramer died in 2020, almost thirty-two years after receiving the positive diagnose. Today, there is still no cure for HIV, and according to Gavi, HIV/AIDS is the only virus discovered in the 20th century that still remains active to this day (Prahbu). Kramer fight helped millions of gay people to survive, get attention, improve their life, and diminish the stigma and hate against them. Because of him, HIV/AIDS does not mean a death sentence to infected people anymore. His courage and advocacy will always be remembered. Thank you, Larry.</p>
+	</div>
+<br><br>
+<a href="blog.html">		
+	<div class="larry">
+	<button class="see-more-button" >
+		Go Back
+	</button>
+		</div>
+	</a>
+	
+<br>
+<hr>
+	
+		<footer>
+    
+		<br>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <div>
+            <a href="https://www.instagram.com/juansebastianboo" target="_blank" style="margin-right: 15px;">
+                <img src="images/instagram-icon.png" alt="Instagram" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://www.linkedin.com/in/j-sebastian-mendoza-64a09624b" target="_blank">
+                <img src="images/linkedin-icon.png" alt="LinkedIn" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+        <p style="margin-top: 10px;">
+            <small>Copyright &copy; 2024 Sebastian Mendoza. All Rights Reserved</small>
+        </p>
+    </div>
+</footer>
+	
+		</div>
+</body>
+</html>
